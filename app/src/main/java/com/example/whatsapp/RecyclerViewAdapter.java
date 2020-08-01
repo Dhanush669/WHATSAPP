@@ -2,6 +2,8 @@ package com.example.whatsapp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,11 +40,25 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final MyViewHolder holder, final int position) {
         holder.pname.setText(data.get(position).getName());
         holder.pimage.setImageResource(data.get(position).getImage());
         holder.tim.setText(data.get(position).getTime());
         holder.lmsg.setText(data.get(position).getMsg());
+        holder.pname.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context,PersonalChat.class);
+                intent.putExtra("name",data.get(position).getName());
+               // holder.pimage.buildDrawingCache();
+               // Bitmap bitmap=holder.pimage.getDrawingCache();
+               // Bundle bundle=new Bundle();
+              //  bundle.putParcelable("image",bitmap);
+                //intent.putExtra("image",data.get(position).getImage());
+                //intent.putExtra("image",bundle);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

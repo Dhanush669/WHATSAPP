@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_camera);
         Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
         setOnClickListener();
+        viewPager.setCurrentItem(1);
     }
 
     private void setOnClickListener() {
