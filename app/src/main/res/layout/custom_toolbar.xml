@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
     android:id="@+id/cusact"
-    android:background="#02603D"
+    android:background="#232d36"
     android:elevation="0dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     >

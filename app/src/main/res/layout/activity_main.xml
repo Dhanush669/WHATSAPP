@@ -18,7 +18,7 @@
             android:id="@+id/tablay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#02603D"
+            android:background="#232d36"
             app:tabIndicatorColor="#fff"
             app:tabMode="fixed"
             app:tabGravity="fill"
