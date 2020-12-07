@@ -103,7 +103,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="290dp"
         android:layout_marginLeft="280dp"
-        android:layout_marginTop="500dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
         android:background="#65DC5D"
         android:clickable="true"
         android:focusable="true"
@@ -119,14 +122,16 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="297dp"
         android:layout_marginLeft="290dp"
-        android:layout_marginTop="420dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="110dp"
         android:background="#65DC5D"
         android:clickable="true"
         android:focusable="true"
         android:src="@drawable/ic_pen"
         app:backgroundTint="#DFDFDF"
         app:fabSize="mini"
-        >
+        android:layout_marginRight="25dp">
 
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
